@@ -16,7 +16,7 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 space-y-4 ">
             <p className="text-5xl font-bold">
               Get The Best Perfumes on BlueBox
             </p>

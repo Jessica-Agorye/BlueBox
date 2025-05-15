@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <section className="flex justify-evenly mt-10 mb-10">
       <div>
-        <p className="text-3xl font-semibold">BlueBox Perfumerie</p>
+        <p className=" text-sm md:text-3xl font-semibold">BlueBox Perfumerie</p>
       </div>
 
       <div>
@@ -17,8 +17,8 @@ const Navbar = () => {
         />
       </div>
       <div>
-        <div>
-          <ul className="flex gap-4">
+        <div className="">
+          <ul className="hidden md:gap-4 md:flex">
             <li>
               <a href="">Product</a>
             </li>
