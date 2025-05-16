@@ -1,8 +1,13 @@
 "use client";
 import { useCart } from "../context/cartContext";
+import { useState } from "react";
 
 const Navbar = () => {
   const { cartCount } = useCart();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <section className="flex justify-evenly mt-10 mb-10">
       <div>
@@ -18,6 +23,10 @@ const Navbar = () => {
       </div>
       <div>
         <div className="">
+          <button onClick={toggleMenu} className="md:hidden">
+            {" "}
+            {isMenuOpen ? "x" : "-"}
+          </button>
           <ul className="hidden md:gap-4 md:flex">
             <li>
               <a href="">Product</a>
@@ -37,6 +46,10 @@ const Navbar = () => {
           Cart:{cartCount}
         </a>
       </div>
+
+      {/* Collpasable nav */}
+
+    
     </section>
   );
 };
