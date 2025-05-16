@@ -48,8 +48,21 @@ const Navbar = () => {
       </div>
 
       {/* Collpasable nav */}
-
-    
+      {isMenuOpen && (
+        <div>
+          <ul className="  md:hidden md:gap-4">
+            <li>
+              <a href="">Product</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a href="">Faq</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </section>
   );
 };
